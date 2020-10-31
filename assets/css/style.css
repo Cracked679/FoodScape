@@ -1,0 +1,167 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 0 0.2rem #FBED00;
+          box-shadow: 0 0 0 0.2rem #FBED00;
+}
+
+h1, h2, h3, h4, h5, a {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+a {
+  margin: auto 0;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #828282 !important;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #59882B !important;
+}
+
+.social {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.social-link-shadow {
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+          filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-brand {
+  padding-top: 0;
+}
+
+.navbar-brand img {
+  max-width: 113px;
+}
+
+.navbar button {
+  border: none;
+}
+
+.navbar button:focus {
+  outline: none;
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  right: 0;
+  top: 0;
+  background-color: black;
+  /* Black fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/opacity */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+  position: relative;
+  width: 100%;
+  /* 100% width */
+  text-align: center;
+  /* Centered text/links */
+  margin-top: 30px;
+  /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  /* Display block instead of inline */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  font-size: 4rem;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+#home h1 {
+  font-size: calc(2.5rem + 1vw);
+}
+
+#home p {
+  font-size: calc(.5rem + 1vw);
+}
+
+#home button {
+  border: none;
+  color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#8CB560), to(#59882A));
+  background: linear-gradient(90deg, #8CB560 0%, #59882A 100%);
+}
+
+#home button:active,
+#home button:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #FBED00;
+          box-shadow: 0 0 0 0.2rem #FBED00;
+}
+/*# sourceMappingURL=style.css.map */
