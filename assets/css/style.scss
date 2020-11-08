@@ -14,6 +14,7 @@ html{
 }
 
 body{
+  height: 100%;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -127,12 +128,30 @@ a {
 
 
 // main
+@media (min-width:992px){
+  #home,#about,#services,#menu{
+    height:90vh;
+  }
+ 
+}
+
+@media (max-width: 590px){
+  #home .row{
+    margin: 0 auto;
+  }
+}
+
+#home .row{
+  height: 90%;
+}
+
 #home h1{
   font-size: calc(2.5rem + 1vw);
 }
 
-#home p{
+p{
   font-size: calc(.5rem + 1vw);
+  color:$text-secondary;
 }
 
 #home button{
@@ -145,16 +164,15 @@ a {
 #home button:focus{
   box-shadow: 0 0 0 0.2rem $yellow,0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px  rgba(0, 0, 0, 0.22);
 }
-.btn-md-shadow {
+.md-shadow {
   position: relative;
   transition: all 250ms ease-out;
-  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.25), 0 5px 5px  rgba(0, 0, 0, 0.22);
+  box-shadow:  0 5px 5px  rgba(0, 0, 0, 0.22);
 }
-.btn-md-shadow:hover {
+.md-shadow:hover {
   color: #fff;
-  transform: translate(0, -1px);
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  
+  transform: translate(0, -2px);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2); 
 }
 #home .item{
   object-fit: cover;
@@ -170,21 +188,10 @@ a {
   box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
 }
 
-#home .banner img:hover{
-  transform: translateY(-6px);
-  animation-name: hover;
-  animation-duration: 1.5s;
-  animation-delay: 0.5s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
 #home .item:hover{
   transform: scale(1.1);
   transition: all .5s ease-in-out;
-  z-index: 1000;
+  z-index: 2;
 }
 
 #home .items-1 .item:nth-child(2){
@@ -210,3 +217,189 @@ a {
     transform: translateY(-6px);
   }
 }
+
+.banner .bg,
+.banner .button,
+.banner a{
+  top:20%;
+  left:20%;
+  border-radius: 100%;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.banner .bg{
+  width: 2rem;
+  height: 2rem;
+}
+
+.banner .button{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.banner .container-btn {
+  position: absolute;
+  transform: translateY(-6px);
+  animation-name: hover;
+  animation-duration: 1.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  top: 30%;
+  left: 60%;
+}
+
+.banner .bg {
+  animation: pulse 1.2s ease infinite;
+  background: $light-green;
+}
+
+.banner a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 4;
+  border: none;
+  background: $light-green;
+  background-size: 18px;
+  cursor: pointer;
+  outline: none;
+}
+
+
+@keyframes pulse {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .row{
+    text-align: center;
+  }
+  
+  #home .hpf{
+    margin-top: 4rem;
+  }
+
+}
+
+// About
+
+
+#about .row{
+  height: 80%;
+}
+
+#about .page-heading{
+  margin:0;
+}
+
+#about video{
+  border-radius: 10px;
+}
+
+#about img{
+  max-width: calc(10rem + 2vw);
+  
+}
+
+// Services
+
+#services .services-row{
+  height: 50%;
+}
+
+#services .services-card{
+  border-radius: 10px;
+  transition: all 250ms ease-out;
+  box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.22);
+}
+
+#services .services-card:hover {
+  transform: translate(0, -2px);
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+#services .card-data{
+  margin-top: 17%;
+  margin-bottom: 17%;
+}
+
+// Menu
+#menu .menu-row{
+  height: 80%;
+}
+
+#menu .menu-card{
+  border-radius: 10px;
+  transition: all 250ms ease-out;
+  box-shadow: 0 5px 5px  rgba(0, 0, 0, 0.22);
+}
+
+#menu .menu-card:hover {
+  box-shadow: 5px 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+#menu .tab-pane img{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#menu .tab-pane p{
+  color: $green;
+}
+
+
+ .up {
+  color: #55DD11;
+}
+ .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative;
+}
+ .flipper {
+   padding: 0px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+ .flipper.flip .card {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+ .front,
+ .back {
+  width: 100%;
+  padding: 5px;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  
+}
+ .front {
+  z-index: 2;
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+  height: 100%;
+}
+ .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  height: 100%;
+}
+ 

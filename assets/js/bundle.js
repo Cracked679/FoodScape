@@ -7,3 +7,15 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
+
+// Card Flip
+$(".flipper").click(function () {
+  var target = $(event.target);
+  if (target.is("a")) {
+    //follow that link
+    return true;
+  } else {
+    $(this).toggleClass("flip");
+  }
+  return false;
+});
