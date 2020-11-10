@@ -43,193 +43,209 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <header>
-      <nav class="navbar navbar-expand-lg navbar-light mt-3">
-        <div class="container text-center">
-          <a class="navbar-brand" href="#">
-            <img src="assets/img/Logo.png" alt="logo" srcset="" />
-          </a>
-          <button
-            name="navigation menu"
-            class="navbar-toggler"
-            type="button"
-            onclick="openNav()"
-            data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div id="myNav" class="overlay">
-            <!-- Button to close the overlay navigation -->
-            <div class="container d-flex justify-content-end">
-              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-                >&times;</a
-              >
-            </div>
-            <!-- Overlay content -->
-            <div class="overlay-content">
-              <a href="#" class="nav-link">Home</a>
-              <a href="#" class="nav-link">About Us</a>
-              <a href="#" class="nav-link">Services</a>
-              <a href="#" class="nav-link">Menu</a>
-              <a href="#" class="nav-link">Contact</a>
-              <div class="social text-center justify-content-center">
-                <a
-                  class="nav-link social-nav-link social-link-shadow"
-                  href="https://facebook.com/"
-                  ><span class="fa-stack">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i
-                      class="fab fa-facebook-f fa-stack-1x fa-inverse icon-text"
-                    ></i> </span
-                ></a>
-                <a
-                  class="nav-link social-nav-link social-link-shadow"
-                  href="https://twitter.com/"
-                  ><span class="fa-stack">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i
-                      class="fab fa-twitter fa-stack-1x fa-inverse icon-text"
-                    ></i> </span
-                ></a>
-                <a
-                  class="nav-link social-nav-link social-link-shadow"
-                  href="https://instagram.com/"
-                  ><span class="fa-stack">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i
-                      class="fab fa-instagram fa-stack-1x fa-inverse icon-text"
-                    ></i> </span
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div
-            class="collapse navbar-collapse justify-content-end"
-            id="navbarNavAltMarkup"
-          >
-            <div class="navbar-nav">
-              <a class="nav-link link-hover active" href="#">Home </a>
-              <a class="nav-link link-hover" href="#">About Us</a>
-              <a class="nav-link link-hover" href="#">Services</a>
-              <a class="nav-link link-hover" href="#">Menu</a>
-              <a class="nav-link link-hover" href="#">Contact </a>
-              <div class="social">
-                <a
-                  class="nav-link social-nav-link social-link-shadow"
-                  href="https://facebook.com/"
-                  ><span class="fa-stack">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i
-                      class="fab fa-facebook-f fa-stack-1x fa-inverse icon-text"
-                    ></i> </span
-                ></a>
-                <a
-                  class="nav-link social-nav-link social-link-shadow"
-                  href="https://twitter.com/"
-                  ><span class="fa-stack">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i
-                      class="fab fa-twitter fa-stack-1x fa-inverse icon-text"
-                    ></i> </span
-                ></a>
-                <a
-                  class="nav-link social-nav-link social-link-shadow"
-                  href="https://instagram.com/"
-                  ><span class="fa-stack">
-                    <i class="fas fa-circle fa-stack-2x"></i>
-                    <i
-                      class="fab fa-instagram fa-stack-1x fa-inverse icon-text"
-                    ></i> </span
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-
     <main>
       <!-- Home -->
-      <div id="home" class="container">
-        <div class="row justify-content-center align-items-center">
-          <div class="col-sm-12 col-lg-6">
-            <h1 class="font-weight-bold mt-3">
-              Your escape to <br />
-              taste and hygien
-            </h1>
-            <p class="mt-3">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Similique, ea? Deleniti corporis necessitatibus enim doloribus,
-              officiis alias iure animi qui consequuntur corrupti modi
-              reprehenderit dolorum! Animi cum est rem id?
-            </p>
-            <a href="#"
-              ><button
-                href="#"
-                typw="button"
-                class="btn btn-lg md-shadow mt-3 pl-5 pr-5"
-              >
-                Menu
-              </button></a
-            >
-          </div>
-          <div class="col-sm-12 col-lg-6 banner hpf">
-            <div class="row position-relative items-1">
-              <div class="col-6 item">
-                <img
-                  src="./assets/img/banner-img-1.jpg"
-                  alt=""
-                  class="hover-shadow"
-                />
-                <div class="container-btn">
-                  <div class="bg"></div>
-                  <a href="#">
-                    <div class="button"></div>
-                  </a>
+      <div class="video-bg">
+        <div class="bg-overlay"></div>
+        <video
+          playsinline="playsinline"
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+        >
+          <source src="./assets/video/home-bg.mp4" type="video/mp4" />
+        </video>
+
+        <div class="container">
+          <header>
+            <nav class="navbar navbar-expand-lg navbar-light mt-3 pl-0 pr-0">
+              <div class="container text-center pl-0 pr-0">
+                <a class="navbar-brand" href="#">
+                  <img src="assets/img/dark-logo.png" alt="logo" srcset="" />
+                </a>
+                <button
+                  name="navigation menu"
+                  class="navbar-toggler"
+                  type="button"
+                  onclick="openNav()"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="myNav" class="overlay">
+                  <!-- Button to close the overlay navigation -->
+                  <div class="container d-flex justify-content-end">
+                    <a
+                      href="javascript:void(0)"
+                      class="closebtn"
+                      onclick="closeNav()"
+                      >&times;</a
+                    >
+                  </div>
+                  <!-- Overlay content -->
+                  <div class="overlay-content">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About Us</a>
+                    <a href="#" class="nav-link">Services</a>
+                    <a href="#" class="nav-link">Menu</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <div class="social text-center justify-content-center">
+                      <a
+                        class="nav-link social-nav-link social-link-shadow"
+                        href="https://facebook.com/"
+                        ><span class="fa-stack">
+                          <i class="fas fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fab fa-facebook-f fa-stack-1x fa-inverse icon-text"
+                          ></i> </span
+                      ></a>
+                      <a
+                        class="nav-link social-nav-link social-link-shadow"
+                        href="https://twitter.com/"
+                        ><span class="fa-stack">
+                          <i class="fas fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fab fa-twitter fa-stack-1x fa-inverse icon-text"
+                          ></i> </span
+                      ></a>
+                      <a
+                        class="nav-link social-nav-link social-link-shadow"
+                        href="https://instagram.com/"
+                        ><span class="fa-stack">
+                          <i class="fas fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fab fa-instagram fa-stack-1x fa-inverse icon-text"
+                          ></i> </span
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="collapse navbar-collapse justify-content-end"
+                  id="navbarNavAltMarkup"
+                >
+                  <div class="navbar-nav">
+                    <a class="nav-link link-hover active" href="#">Home </a>
+                    <a class="nav-link link-hover" href="#">About Us</a>
+                    <a class="nav-link link-hover" href="#">Services</a>
+                    <a class="nav-link link-hover" href="#">Menu</a>
+                    <a class="nav-link link-hover" href="#">Contact </a>
+                    <div class="social">
+                      <a
+                        class="nav-link social-nav-link social-link-shadow"
+                        href="https://facebook.com/"
+                        ><span class="fa-stack">
+                          <i class="fas fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fab fa-facebook-f fa-stack-1x fa-inverse icon-text"
+                          ></i> </span
+                      ></a>
+                      <a
+                        class="nav-link social-nav-link social-link-shadow"
+                        href="https://twitter.com/"
+                        ><span class="fa-stack">
+                          <i class="fas fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fab fa-twitter fa-stack-1x fa-inverse icon-text"
+                          ></i> </span
+                      ></a>
+                      <a
+                        class="nav-link social-nav-link social-link-shadow"
+                        href="https://instagram.com/"
+                        ><span class="fa-stack">
+                          <i class="fas fa-circle fa-stack-2x"></i>
+                          <i
+                            class="fab fa-instagram fa-stack-1x fa-inverse icon-text"
+                          ></i> </span
+                      ></a>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-6 item mt-4">
-                <img
-                  src="./assets/img/banner-img-2.jpg"
-                  alt=""
-                  class="hover-shadow"
-                />
-                <div class="container-btn">
-                  <div class="bg"></div>
-                  <a href="#">
-                    <div class="button"></div>
-                  </a>
-                </div>
+            </nav>
+          </header>
+          <div id="home">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-sm-12 col-lg-6">
+                <h1 class="font-weight-bold mt-3 text-white">
+                  Your escape to <br />
+                  taste and hygien
+                </h1>
+                <p class="mt-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Similique, ea? Deleniti corporis necessitatibus enim
+                  doloribus, officiis alias iure animi qui consequuntur corrupti
+                  modi reprehenderit dolorum! Animi cum est rem id?
+                </p>
+                <a href="#"
+                  ><button
+                    href="#"
+                    typw="button"
+                    class="btn btn-lg md-shadow mt-3 pl-5 pr-5"
+                  >
+                    Menu
+                  </button></a
+                >
               </div>
-            </div>
-            <div class="row position-relative items-2">
-              <div class="col-6 item">
-                <img
-                  src="./assets/img/banner-img-3.jpg"
-                  alt=""
-                  class="hover-shadow"
-                />
-                <div class="container-btn">
-                  <div class="bg"></div>
-                  <a href="#">
-                    <div class="button"></div>
-                  </a>
+              <div class="col-sm-12 col-lg-6 banner hpf mb-5">
+                <div class="row position-relative items-1">
+                  <div class="col-6 item">
+                    <img
+                      src="./assets/img/banner-img-1.jpg"
+                      alt=""
+                      class="hover-shadow"
+                    />
+                    <div class="container-btn">
+                      <div class="bg"></div>
+                      <a href="#">
+                        <div class="button"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 item mt-4">
+                    <img
+                      src="./assets/img/banner-img-2.jpg"
+                      alt=""
+                      class="hover-shadow"
+                    />
+                    <div class="container-btn">
+                      <div class="bg"></div>
+                      <a href="#">
+                        <div class="button"></div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="col-6 item mt-4">
-                <img
-                  src="./assets/img/banner-img-4.jpg"
-                  alt=""
-                  class="hover-shadow"
-                />
-                <div class="container-btn">
-                  <div class="bg"></div>
-                  <a href="#">
-                    <div class="button"></div>
-                  </a>
+                <div class="row position-relative items-2">
+                  <div class="col-6 item">
+                    <img
+                      src="./assets/img/banner-img-3.jpg"
+                      alt=""
+                      class="hover-shadow"
+                    />
+                    <div class="container-btn">
+                      <div class="bg"></div>
+                      <a href="#">
+                        <div class="button"></div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-6 item mt-4">
+                    <img
+                      src="./assets/img/banner-img-4.jpg"
+                      alt=""
+                      class="hover-shadow"
+                    />
+                    <div class="container-btn">
+                      <div class="bg"></div>
+                      <a href="#">
+                        <div class="button"></div>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -334,7 +350,7 @@
 
       <!-- Services -->
       <div class="video-bg">
-        <div class="overlay"></div>
+        <div class="bg-overlay"></div>
         <video
           playsinline="playsinline"
           autoplay="autoplay"
@@ -475,6 +491,7 @@
                   Monday - Friday <br />
                   7:00am - 10:30am
                 </p>
+                <span class="nav-indicator"></span>
               </div>
             </div>
             <div
@@ -1798,6 +1815,179 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <!-- Testimonials -->
+      <div id="testimonials" class="container mt-5 mb-5">
+        <div class="d-flex align-items-center justify-content-center">
+          <div class="d-flex flex-column">
+            <h2
+              class="text align-self-center p-2 page-heading h-3 font-weight-bold"
+            >
+              Testimonials
+            </h2>
+            <svg
+              viewBox="0 0 38 5"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16.4361 3.63853C16.149 3.71442 15.9404 2.86169 16.1035 2.53764C16.1669 2.4109 16.2556 2.27709 16.3589 2.18007C16.5914 1.9626 17.025 1.91143 17.3392 1.90743C17.5028 1.90564 17.8951 1.95176 18.0935 2.12513C18.1877 2.20777 18.2741 2.30957 18.3503 2.40833C18.4863 2.58473 18.4597 2.52754 18.6682 2.51647C18.8777 2.5054 18.5166 1.97266 18.4583 1.91322C18.28 1.73379 18.0908 1.5471 17.839 1.4634C17.3172 1.28953 16.7659 1.28728 16.2464 1.10436C16.014 1.02296 15.7788 0.942059 15.5757 0.799194C15.3575 0.645212 15.3428 0.38167 15.578 0.238759C15.7144 0.156118 15.4999 0.107469 15.4503 0.0911158C15.3391 0.0538147 15.2716 0.266505 15.2413 0.334767C15.1333 0.576168 15.233 0.816558 15.4301 0.978073C15.4659 1.00757 15.6749 1.07891 15.668 1.13334C15.6579 1.21116 15.4848 1.18374 15.5541 1.31048C15.6855 1.55188 15.9699 1.54076 16.1968 1.55767C16.4494 1.57632 16.714 1.49795 16.9717 1.51232C17.1091 1.51986 17.2391 1.51278 17.3728 1.54228C17.4297 1.55463 17.5023 1.55638 17.551 1.59166C17.6071 1.63176 17.6094 1.73076 17.5212 1.72901C17.0025 1.71895 16.358 1.49266 15.8734 1.77867C15.7494 1.85171 15.6639 1.96563 15.5936 2.08732C15.5128 2.2272 15.6299 2.30024 15.7696 2.23676C15.8003 2.22288 16.0456 2.01401 16.0383 2.14883C16.0342 2.21935 15.9207 2.27153 15.8734 2.30631C15.7976 2.36198 15.7314 2.42877 15.6708 2.49956C15.5844 2.59961 15.5178 2.70495 15.516 2.83725C15.5142 2.96927 15.5206 3.23791 15.7025 3.16308C15.7843 3.12927 15.8297 3.42589 15.8633 3.48662C15.9354 3.61611 16.0475 3.77892 16.2119 3.80156C16.324 3.81695 16.4458 3.83207 16.5523 3.76734C16.5836 3.74841 16.669 3.67712 16.6327 3.63224C16.5905 3.57987 16.4876 3.62494 16.4361 3.63853Z"
+                fill="#231F20"
+              />
+              <path
+                d="M22.0221 2.34807C21.9994 2.32741 21.7879 2.16562 21.9067 2.14544C21.9477 2.13839 21.9912 2.16036 22.0356 2.18252C22.0983 2.21322 22.1635 2.24398 22.2272 2.1941C22.3701 2.08296 21.897 1.77832 21.828 1.74911C21.5393 1.62841 21.2337 1.63922 20.9286 1.64376C20.7963 1.64424 20.6471 1.67273 20.5255 1.69769C20.4926 1.7045 20.1996 1.77605 20.2749 1.62966C20.3686 1.44847 20.848 1.50819 21.0068 1.50998C21.1511 1.51172 21.295 1.50969 21.4374 1.53441C21.6527 1.57168 21.9656 1.56087 22.0761 1.49356C22.1297 1.46131 22.3716 1.29904 22.2741 1.22218C22.262 1.21286 22.0119 1.14759 22.0906 1.10781C22.1862 1.05914 22.2784 1.04456 22.3605 0.970209C22.5575 0.79307 22.6965 0.464719 22.4653 0.26315C22.4373 0.23872 22.2528 0.14974 22.2649 0.253059C22.2765 0.357151 22.3943 0.398962 22.3769 0.528979C22.36 0.659528 22.2635 0.760819 22.1626 0.836667C22.0737 0.903921 21.4519 1.19853 21.1 1.23305C20.8426 1.25873 20.5704 1.27259 20.3217 1.35249C19.8071 1.51804 19.3765 1.79695 19.1264 2.29211C19.0511 2.44028 19.0733 2.49194 19.236 2.53931C19.388 2.58367 19.402 2.48943 19.4836 2.38611C19.669 2.15302 19.9104 2.01064 20.1981 1.93605C20.7157 1.80226 21.4143 1.98669 21.6986 2.47027C21.8265 2.68926 21.8825 2.9828 21.8082 3.22623C21.7725 3.34215 21.6976 3.47391 21.5909 3.54198C21.5422 3.57322 21.2438 3.5654 21.364 3.67852C21.5436 3.84735 21.8801 3.61706 21.9777 3.46662C22.0057 3.42278 22.0496 3.21262 22.0829 3.19596C22.1037 3.18539 22.1249 3.19422 22.1457 3.20306C22.1669 3.21184 22.1886 3.22092 22.2113 3.20958C22.263 3.18389 22.2606 3.08159 22.2852 3.03596C22.402 2.81875 22.1722 2.48465 22.0221 2.34807"
+                fill="#231F20"
+              />
+              <path
+                d="M24.2458 2.90184C24.2029 2.80227 24.1156 2.73802 24.0169 2.69572C23.9765 2.67831 23.7849 2.58483 23.8348 2.51274C23.8967 2.42305 24.0683 2.60373 24.1132 2.638C24.3496 2.81993 24.5815 2.86732 24.8758 2.79524C25.0509 2.75239 25.0185 2.69467 24.9058 2.59515C24.822 2.52083 25.0395 2.4475 25.0873 2.40515C25.1736 2.32907 25.232 2.25978 25.2694 2.15443C25.3113 2.03575 25.2764 2.02642 25.1871 2.11537C24.792 2.509 24.2094 2.33261 23.7415 2.2298C23.4363 2.16301 23.1385 2.06499 22.8422 1.97001C22.7085 1.92716 22.5788 1.87273 22.4456 1.82938C22.4092 1.81751 22.1308 1.70592 22.1378 1.78808C22.1443 1.86161 22.2915 2.02368 22.3364 2.09297C22.4102 2.20785 22.5099 2.2517 22.6242 2.32728C22.8676 2.4883 23.0646 2.66624 23.2507 2.89147C23.3973 3.0689 23.5056 3.32187 23.3539 3.53352C23.2761 3.64267 23.4607 3.60331 23.5056 3.57613C23.5919 3.52395 23.6802 3.38662 23.6587 3.2856C23.6647 3.31354 23.6632 3.29338 23.6612 3.27348C23.6582 3.24928 23.6542 3.22514 23.6587 3.2856C23.6373 3.01318 23.4906 2.81489 23.2986 2.62892C23.2587 2.59011 23.1923 2.54452 23.1699 2.49159C23.1534 2.45253 23.1943 2.37187 23.2447 2.41572C23.339 2.49738 23.4053 2.5732 23.4782 2.67277C23.5245 2.73553 23.6243 2.81893 23.6877 2.86682C23.7665 2.92628 23.8677 3.02201 23.9745 3.01598C24.0328 3.01293 24.2892 3.00236 24.2458 2.90184"
+                fill="#231F20"
+              />
+              <path
+                d="M15.4178 1.84672C14.9639 2.05384 14.47 2.14005 13.9853 2.26149C13.8455 2.29677 13.6977 2.33961 13.553 2.35293C13.4211 2.36529 13.2984 2.35826 13.1669 2.36556C13.0244 2.37361 12.8744 2.32096 12.7495 2.25643C12.6919 2.22696 12.5876 2.07931 12.523 2.08863C12.3677 2.11129 12.7913 2.47037 12.8625 2.49632C12.9342 2.52302 12.7983 2.67221 12.8238 2.73648C12.8405 2.77905 13.1374 2.86372 13.1827 2.86095C13.473 2.89447 13.6423 2.59942 13.8908 2.54422C14.0337 2.51246 13.7967 2.71708 13.7694 2.73019C13.6863 2.771 13.5174 2.81912 13.5125 2.93304C13.5081 3.04388 13.7439 3.00913 13.8099 3.01591C13.929 3.02853 14.0496 2.87661 14.1248 2.80703C14.2303 2.71004 14.3209 2.60342 14.437 2.51774C14.4815 2.48475 14.547 2.41521 14.6086 2.4157C14.6825 2.41618 14.6077 2.49557 14.5954 2.50565C14.397 2.66997 14.2259 2.87859 14.149 3.12226C14.0891 3.31174 14.1947 3.60331 14.4348 3.60155C14.5699 3.60054 14.4102 3.41858 14.3948 3.37754C14.3482 3.25382 14.3939 3.15578 14.4441 3.0434C14.54 2.82946 14.7484 2.69166 14.9063 2.5349C14.9969 2.44543 15.0866 2.35144 15.2036 2.29576C15.2815 2.25872 15.4438 2.21007 15.4702 2.1214C15.5027 2.01478 15.5893 1.94802 15.6382 1.85455C15.694 1.74745 15.449 1.83286 15.4178 1.84672"
+                fill="#231F20"
+              />
+              <path
+                d="M13.5799 3.05072C13.3594 3.06505 13.1759 3.19888 12.9773 3.28278C12.5423 3.4665 11.9748 3.55469 11.5107 3.45487C11.3022 3.41031 11.1148 3.21853 11.1294 3.00358C11.1349 2.92646 11.2405 2.79216 11.0835 2.79417C10.9651 2.79572 10.9196 2.9018 10.8973 2.99904C10.878 3.0832 10.8823 3.19609 10.926 3.2742C10.9724 3.35737 10.7519 3.32512 10.8042 3.4161C10.8553 3.50403 11.0028 3.58416 11.0933 3.62649C11.1997 3.67664 11.041 3.6847 11.0067 3.68294C10.8004 3.69804 10.5186 3.55066 10.3341 3.47328C10.2183 3.42489 10.1102 3.36064 10.0081 3.28857C9.8627 3.18576 9.82538 3.13913 9.6538 3.20617C9.6152 3.22157 9.5071 3.22157 9.57058 3.2926C9.6508 3.38281 9.76104 3.44707 9.86999 3.5C10.0274 3.57687 10.1844 3.64588 10.3474 3.70233H0.291237C0.243196 3.70233 0.20459 3.74089 0.20459 3.78876V3.79052C0.20459 3.83818 0.243196 3.87695 0.291237 3.87695H11.4048L11.4043 3.8767C12.0773 3.87923 12.7366 3.68796 13.341 3.37273C13.4135 3.33571 13.9175 3.02855 13.5799 3.05072Z"
+                fill="#231F20"
+              />
+              <path
+                d="M20.1603 2.67578C20.0426 2.68105 19.8901 2.76827 19.8586 2.86627C19.82 2.98649 19.8397 3.10718 19.9372 3.19615C20.0713 3.31858 20.1193 3.22637 20.2323 3.14747C20.3264 3.08172 20.3001 3.4219 20.2676 3.47104C20.0944 3.73111 19.7013 3.64967 19.5102 3.47433C19.4072 3.37982 19.3601 3.25004 19.322 3.12079C19.2895 3.00989 19.0706 2.89273 18.9755 3.00485C18.9139 3.07691 19.0132 3.32413 19.0508 3.39799C19.1238 3.54414 19.2113 3.67161 19.3285 3.7883C19.5884 4.04634 19.9155 4.03824 20.2426 3.93798C20.526 3.85128 20.7251 3.5368 20.7171 3.25583C20.7105 3.01116 20.5119 2.66622 20.1603 2.67578"
+                fill="#231F20"
+              />
+              <path
+                d="M18.6292 2.97944C18.4891 3.03211 18.5181 3.19414 18.4552 3.30727C18.3027 3.58345 18.0134 3.71701 17.7168 3.58042C17.603 3.52775 17.4758 3.42169 17.49 3.2856C17.5134 3.0563 17.58 3.24102 17.7393 3.24478C18.1241 3.25332 18.024 2.67783 17.6626 2.67531C17.4087 2.6478 17.1814 2.9119 17.1544 3.13895C17.1208 3.42293 17.2508 3.72229 17.5148 3.87675C17.7683 4.02519 18.0506 4.02542 18.3105 3.89617C18.6177 3.74323 18.7513 3.47183 18.8133 3.15507C18.8404 3.01521 18.7871 2.91971 18.6292 2.97944"
+                fill="#231F20"
+              />
+              <path
+                d="M24.7814 1.47843C24.8496 1.49056 24.8797 1.59286 24.9539 1.58704C25.023 1.58178 25.0506 1.47267 25.1233 1.45277C25.188 1.43513 25.2697 1.44646 25.3224 1.48956C25.4667 1.60699 25.4843 1.88189 25.4041 2.04267C25.3865 2.07846 25.2692 2.32033 25.3008 2.34353C25.36 2.38684 25.4687 2.18551 25.4883 2.15579C25.5951 1.9915 25.6934 1.75033 25.6608 1.55076C25.6462 1.36682 25.5424 1.15417 25.4051 1.05513C25.2918 0.973739 25.0246 0.883024 24.8536 0.956348C24.7027 1.0211 24.5122 1.13121 24.5909 1.3371C24.634 1.45022 24.6766 1.45979 24.7814 1.47843"
+                fill="#231F20"
+              />
+              <path
+                d="M12.3909 2.22933C12.4773 2.28881 12.3909 2.0479 12.3905 2.04714C12.3671 1.95443 12.3471 1.83925 12.3483 1.74352C12.3505 1.59558 12.5224 1.36123 12.693 1.45624C12.7836 1.50666 12.7636 1.76667 12.9393 1.5986C13.0635 1.47994 13.2137 1.46356 13.2793 1.27533C13.352 1.06489 13.0618 0.947249 12.918 0.923295C12.4509 0.845944 12.2301 1.35672 12.1888 1.72386C12.1888 1.72335 12.1884 1.72586 12.1875 1.73369C12.185 1.76441 12.1862 1.75433 12.1875 1.74148C12.1803 1.88031 12.273 2.14844 12.3909 2.22933"
+                fill="#231F20"
+              />
+              <path
+                d="M19.5195 2.87852C19.578 2.54638 18.4105 2.45995 18.3076 2.86466C18.2594 3.05416 18.4166 2.95943 18.4921 2.91204C18.5955 2.84727 18.7281 2.83266 18.8482 2.83266C18.9831 2.83266 19.1306 2.8392 19.2571 2.89113C19.3823 2.94302 19.5061 3.10002 19.5195 2.87852"
+                fill="#231F20"
+              />
+              <path
+                d="M37.2911 3.70258H27.4062C27.5592 3.65245 27.7081 3.59121 27.8496 3.51559C27.9831 3.44478 28.3022 3.28679 28.053 3.17869C27.9338 3.12678 27.8823 3.16941 27.7964 3.24726C27.7099 3.32586 27.6136 3.36263 27.5157 3.4221C27.3524 3.52138 27.0287 3.64741 26.8339 3.62421C26.7652 3.6159 27.0717 3.44404 26.9955 3.36894C26.9067 3.28152 26.9571 3.26616 26.9668 3.1497C26.9772 3.02573 26.9726 2.9174 26.8517 2.85341C26.7961 2.82419 26.6563 2.81612 26.7136 2.92095C26.7703 3.02527 26.7881 3.06887 26.7314 3.18476C26.6357 3.37976 26.3888 3.51937 26.166 3.50551C26.0588 3.50654 25.2643 3.43121 24.8077 3.27521C24.5871 3.19988 24.4164 3.07941 24.1718 3.09654C24.0234 3.10691 24.181 3.20567 24.2205 3.22457C24.3631 3.29183 24.5069 3.35685 24.6467 3.42943C24.999 3.61235 25.392 3.75299 25.7856 3.82935C25.9523 3.86183 26.1494 3.88904 26.3258 3.87696L26.3252 3.87719H37.2911C37.3387 3.87719 37.3776 3.8384 37.3776 3.7908V3.78902C37.3776 3.74113 37.3387 3.70258 37.2911 3.70258"
+                fill="#231F20"
+              />
+            </svg>
+          </div>
+        </div>
+        <section class="testimonial mt-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block">
+                <ol class="carousel-indicators tabs">
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="0"
+                    class="active"
+                  >
+                    <figure>
+                      <img
+                        src="./assets/img/testimonial-1.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </figure>
+                  </li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="1"
+                  >
+                    <figure>
+                      <img
+                        src="./assets/img/testimonial-2.jpg"
+                        class="img-fluid img-h"
+                        alt=""
+                      />
+                    </figure>
+                  </li>
+                  <li
+                    data-target="#carouselExampleIndicators"
+                    data-slide-to="2"
+                  >
+                    <figure>
+                      <img
+                        src="./assets/img/testimonial-3.jpg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                    </figure>
+                  </li>
+                </ol>
+              </div>
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-center"
+              >
+                <div
+                  id="carouselExampleIndicators"
+                  data-interval="false"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <h3>WHAT OUR CUSTOMERS SAY</h3>
+                  <h1>BETTER SERVICE STARTS HERE</h1>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <div class="quote-wrapper">
+                        <p>
+                          I have tried a lot of food services but FoodScape is
+                          something out of this world! Their food is really
+                          healthy and it tastes great, which is why I recommend
+                          this restaurant to all my friends!
+                        </p>
+                        <h3>Surya Singhal</h3>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="quote-wrapper">
+                        <p>
+                          Such a great experience. Right from parking the car to
+                          polite waiters to excellent food taste. All the food
+                          was epic and was cooked perfectly and gravy had
+                          perfect blend of coconut.
+                        </p>
+                        <h3>Gajendra Sodhi</h3>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <div class="quote-wrapper">
+                        <p>
+                          Great place for friends, family, loved ones or any
+                          meetings. Food is so so tasty and service is also very
+                          quick. Also staff is very polite professional and
+                          friendly.I will definetly come back.
+                        </p>
+                        <h3>Nishita Mitra</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <ol class="carousel-indicators indicators">
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="1"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleIndicators"
+                      data-slide-to="2"
+                    ></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
