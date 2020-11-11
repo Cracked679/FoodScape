@@ -39,17 +39,20 @@ nav ul {
   justify-content: center;
 }
 nav a,
-.nav a
+.nav a,
+.social a
  {
   margin: auto 0;
   font-size: 1.2rem;
   text-decoration: none;
 }
-nav a{
+nav a,
+.social a{
   color:white !important;
 }
 
-nav a .fa-inverse{
+nav a .fa-inverse,
+.social a .fa-inverse{
   color:$green;
 }
 
@@ -57,12 +60,15 @@ nav a .fa-inverse{
 .nav-link:hover,{
   color: $green !important;
 }
+
 .social {
   display: flex !important;
 }
+
 .social-link-shadow {
   filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
+
 .social-nav-link:hover .fa-inverse{
   color:white ;
 }
@@ -76,6 +82,7 @@ nav a .fa-inverse{
 }
 
 .navbar button{
+  background: linear-gradient(90deg, #8CB560 0%, #59882A 100%);
   border: none;
 }
 
@@ -112,7 +119,6 @@ nav a .fa-inverse{
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
   display: block; /* Display block instead of inline */
   transition: 0.3s; /* Transition effects on hover (color) */
 }
@@ -140,8 +146,11 @@ nav a .fa-inverse{
 
 // main
 @media (min-width:992px){
-  #home,#about,#services,#menu,#testimonials{
+  #home,#about,#services,#menu{
     height:100vh;
+  }
+  #footer{
+    height: 50vh;
   }
  
 }
@@ -705,5 +714,37 @@ p{
 @media only screen and (max-width: 1200px) {
   #testimonials .tabs {
     margin-right: 25px;
+  }
+}
+
+// location
+#map {
+  height: 50vh;
+  width: 100%;
+}
+
+// footer
+#footer{
+  background-color: rgba(140,181,96,0.25) ;
+}
+
+#footer a,
+#footer p{
+  padding-left: 0 !important;
+  color:$text-secondary;
+  font-size: calc(1rem + .2vw);
+  text-decoration: none;
+}
+
+footer{
+  background-color: rgba(140,181,96,0.5) ;
+}
+
+@media (max-width:992px){
+  #footer .f-logo{
+    justify-content: center;
+  }
+  #footer .social{
+    justify-content: center;
   }
 }

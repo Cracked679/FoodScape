@@ -39,17 +39,20 @@ nav ul {
 }
 
 nav a,
-.nav a {
+.nav a,
+.social a {
   margin: auto 0;
   font-size: 1.2rem;
   text-decoration: none;
 }
 
-nav a {
+nav a,
+.social a {
   color: white !important;
 }
 
-nav a .fa-inverse {
+nav a .fa-inverse,
+.social a .fa-inverse {
   color: #59882B;
 }
 
@@ -82,6 +85,8 @@ nav a .fa-inverse {
 }
 
 .navbar button {
+  background: -webkit-gradient(linear, left top, right top, from(#8CB560), to(#59882A));
+  background: linear-gradient(90deg, #8CB560 0%, #59882A 100%);
   border: none;
 }
 
@@ -127,7 +132,6 @@ nav a .fa-inverse {
   padding: 8px;
   text-decoration: none;
   font-size: 36px;
-  color: #818181;
   display: block;
   /* Display block instead of inline */
   -webkit-transition: 0.3s;
@@ -158,8 +162,11 @@ nav a .fa-inverse {
 }
 
 @media (min-width: 992px) {
-  #home, #about, #services, #menu, #testimonials {
+  #home, #about, #services, #menu {
     height: 100vh;
+  }
+  #footer {
+    height: 50vh;
   }
 }
 
@@ -813,6 +820,40 @@ p {
 @media only screen and (max-width: 1200px) {
   #testimonials .tabs {
     margin-right: 25px;
+  }
+}
+
+#map {
+  height: 50vh;
+  width: 100%;
+}
+
+#footer {
+  background-color: rgba(140, 181, 96, 0.25);
+}
+
+#footer a,
+#footer p {
+  padding-left: 0 !important;
+  color: #828282;
+  font-size: calc(1rem + .2vw);
+  text-decoration: none;
+}
+
+footer {
+  background-color: rgba(140, 181, 96, 0.5);
+}
+
+@media (max-width: 992px) {
+  #footer .f-logo {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #footer .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

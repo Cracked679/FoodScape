@@ -1878,7 +1878,7 @@
             </svg>
           </div>
         </div>
-        <section class="testimonial mt-5">
+        <section class="testimonial mt-5 mb-5">
           <div class="container">
             <div class="row">
               <div class="col-lg-6 d-none d-lg-block">
@@ -1989,7 +1989,99 @@
           </div>
         </section>
       </div>
+      <div id="map"></div>
     </main>
+    <section id="footer">
+      <div class="container h-100">
+        <div class="row h-100 justify-content-center align-content-center">
+          <div class="col-md-10 col-lg-4 mt-3 mb-3">
+            <a href="index.html" class="d-flex f-logo"
+              ><img
+                src="./assets/img/light-logo.png"
+                alt="logo"
+                class="img-fluid mb-3"
+            /></a>
+            <a>We would love to hear from you !</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-2 mt-4 mb-3">
+            <h3>Our Menu</h3>
+            <a href="" class="nav-link">Breakfast</a>
+            <a href="" class="nav-link">Lunch</a>
+            <a href="" class="nav-link">Dinner</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-2 mt-4 mb-3">
+            <h3>Links</h3>
+            <a href="" class="nav-link">About Us</a>
+            <a href="" class="nav-link">Terms & Conditions</a>
+            <a href="" class="nav-link">Privacy Policy</a>
+          </div>
+          <div class="col-sm-4 col-md-4 col-lg-4 mt-4 mb-3">
+            <h3>Contact</h3>
+            <a href="" class="nav-link">+91-7555119131</a>
+            <a href="" class="nav-link">info@foodscape.com</a>
+            <a>
+              Foodscape, C-II/97, Ground Floor, New Ashok Nagar, District - East
+              , State - Delhi
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer class="">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12 d-flex align-items-center">
+              Copyright &copy;
+              <span id="copyright">
+                <script>
+                  document
+                    .getElementById("copyright")
+                    .appendChild(
+                      document.createTextNode(new Date().getFullYear())
+                    );
+                </script>
+              </span>
+              All Rights Reserved by
+              <a href="index.html">FoodScape</a>
+            </div>
+            <div
+              class="social text-center col-md-4 col-sm-6 col-xs-12 justify-content-center"
+            >
+              <a
+                class="nav-link social-nav-link social-link-shadow"
+                href="https://facebook.com/"
+                ><span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fab fa-facebook-f fa-stack-1x fa-inverse icon-text"
+                  ></i> </span
+              ></a>
+              <a
+                class="nav-link social-nav-link social-link-shadow"
+                href="https://twitter.com/"
+                ><span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fab fa-twitter fa-stack-1x fa-inverse icon-text"
+                  ></i> </span
+              ></a>
+              <a
+                class="nav-link social-nav-link social-link-shadow"
+                href="https://instagram.com/"
+                ><span class="fa-stack">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i
+                    class="fab fa-instagram fa-stack-1x fa-inverse icon-text"
+                  ></i> </span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
   </body>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCGW6ORhvaFzqg8qOHYqkRqAShecqUV_PA&callback=initMap&libraries=&v=weekly"
+    defer
+  ></script>
   <script src="assets/js/bundle.js"></script>
 </html>
