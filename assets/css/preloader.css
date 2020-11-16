@@ -62,8 +62,6 @@
   transition: all 0.3s ease-out;
 }
 .loaded #loader-wrapper {
-  visibility: hidden;
-
   -webkit-transform: translateY(-100%); /* Chrome, Opera 15+, Safari 3.1+ */
   -ms-transform: translateY(-100%); /* IE 9 */
   transform: translateY(-100%); /* Firefox 16+, IE 10+, Opera */
@@ -73,7 +71,4 @@
 }
 .no-js #loader-wrapper {
   display: none;
-}
-.no-js h1 {
-  color: #222222;
 }

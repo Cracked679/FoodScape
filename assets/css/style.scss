@@ -476,6 +476,7 @@ p{
 }
 
 #services .services-card{
+  box-sizing: content-box;
   background-color: white;
   border-radius: 10px;
   transition: all 250ms ease-out;
