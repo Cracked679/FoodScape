@@ -8,6 +8,10 @@ function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
+$("#myNav a").on("click", function () {
+  closeNav();
+});
+
 // Card Flip
 $(".flipper").click(function () {
   var target = $(event.target);
