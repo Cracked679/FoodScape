@@ -44,7 +44,6 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
   background-color: #fff;
 }
 
@@ -223,6 +222,39 @@ nav a .fa-inverse,
 #home .row{
   text-shadow:  0 5px 5px  rgba(0, 0, 0, 0.22);
   height: 80%;
+}
+.animated-text {
+  
+  h1 { 
+    position: relative; 
+    display: inline-block;
+  }
+  
+  span {
+    display: inline-block;
+    animation: colorchange 8s infinite;
+    margin-left: 0;
+    width: 0;
+    opacity: 0;
+    transform: scale(2);
+    transition: all 0.6s ease;
+  }
+  
+  span.animate {
+    opacity: 1;
+    transform: scale(1);
+    width: auto;
+  }
+}
+
+
+@keyframes colorchange
+{
+  0%   {color: var($light-green)}
+  25%  {color: var($yellow)}
+  50%  {color: var($green)}
+  75%  {color: #00adef;}
+  100% {color: #eb008b;}
 }
 
 #home h1{
@@ -407,11 +439,11 @@ p{
   margin:0;
 }
 
-#about video{
+#about .veg-img{
   border-radius: 10px;
 }
 
-#about img{
+#about .chef-img{
   max-width: calc(10rem + 2vw);
   
 }
@@ -420,56 +452,6 @@ p{
 #services .services-row{
   height:90%;
 }
-
-// .video-bg {
-//   position: relative;
-//   background-color: black;
-//   min-height: 25rem;
-//   width: 100%;
-//   overflow: hidden;
-// }
-
-// .video-bg video {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   min-width: 100%;
-//   min-height: 100%;
-//   width: auto;
-//   height: auto;
-//   z-index: 0;
-//   -ms-transform: translateX(-50%) translateY(-50%);
-//   -moz-transform: translateX(-50%) translateY(-50%);
-//   -webkit-transform: translateX(-50%) translateY(-50%);
-//   transform: translateX(-50%) translateY(-50%);
-// }
-
-// .video-bg .container-fluid,
-// .video-bg .container{
-//   position: relative;
-//   z-index: 100;
-// }
-
-// .video-bg .bg-overlay {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   height: 100%;
-//   width: 100%;
-//   background-color: black;
-//   opacity: 0.5;
-//   z-index: 1;
-// }
-
-// @media (pointer: coarse) and (hover: none) {
-//   .video-bg {
-//     background: url("/assets/video/about-video.mp4") black no-repeat center center scroll;
-//   }
-//   .video-bg video {
-//     display: none;
-//   }
-// }
-
 
 #services .services-row{
   height: 50%;

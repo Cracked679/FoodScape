@@ -48,7 +48,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fff;
   background-color: #fff;
 }
 
@@ -243,6 +242,67 @@ nav a .fa-inverse,
 #home .row {
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.22);
   height: 80%;
+}
+
+.animated-text h1 {
+  position: relative;
+  display: inline-block;
+}
+
+.animated-text span {
+  display: inline-block;
+  -webkit-animation: colorchange 8s infinite;
+          animation: colorchange 8s infinite;
+  margin-left: 0;
+  width: 0;
+  opacity: 0;
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+
+.animated-text span.animate {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  width: auto;
+}
+
+@-webkit-keyframes colorchange {
+  0% {
+    color: var(#8CB560);
+  }
+  25% {
+    color: var(#FBED00);
+  }
+  50% {
+    color: var(#59882B);
+  }
+  75% {
+    color: #00adef;
+  }
+  100% {
+    color: #eb008b;
+  }
+}
+
+@keyframes colorchange {
+  0% {
+    color: var(#8CB560);
+  }
+  25% {
+    color: var(#FBED00);
+  }
+  50% {
+    color: var(#59882B);
+  }
+  75% {
+    color: #00adef;
+  }
+  100% {
+    color: #eb008b;
+  }
 }
 
 #home h1 {
@@ -499,11 +559,11 @@ p {
   margin: 0;
 }
 
-#about video {
+#about .veg-img {
   border-radius: 10px;
 }
 
-#about img {
+#about .chef-img {
   max-width: calc(10rem + 2vw);
 }
 

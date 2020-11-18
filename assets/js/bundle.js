@@ -12,6 +12,28 @@ $("#myNav a").on("click", function () {
   closeNav();
 });
 
+var animated_div = $(".animated-text span"),
+  word_count = animated_div.length,
+  animation_interval = word_count * 3000 + 7000;
+
+console.log(animation_interval);
+function animate_word() {
+  animated_div.each(function (index) {
+    (function (that, i) {
+      var t = setTimeout(function () {
+        animated_div.removeClass("animate");
+        $(that).addClass("animate");
+      }, 3000 * i);
+    })(this, index);
+  });
+}
+
+animate_word();
+
+window.setInterval(function () {
+  animate_word();
+}, 16000);
+
 // Card Flip
 $(".flipper").click(function () {
   var target = $(event.target);
