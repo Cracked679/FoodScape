@@ -1,30 +1,32 @@
+"use strict";
+
 /* Open when someone clicks on the span element */
 function openNav() {
   document.getElementById("myNav").style.width = "100%";
 }
-
 /* Close when someone clicks on the "x" symbol inside the overlay */
+
+
 function closeNav() {
   document.getElementById("myNav").style.width = "0%";
 }
 
 $("#myNav a").on("click", function () {
   closeNav();
-});
+}); // Card Flip
 
-// Card Flip
 $(".flipper").click(function () {
   var target = $(event.target);
+
   if (target.is("a")) {
     //follow that link
     return true;
   } else {
     $(this).toggleClass("flip");
   }
-  return false;
-});
 
-// Testimonials
+  return false;
+}); // Testimonials
 
 $(document).ready(function () {
   $(".testimonial .indicators li").click(function () {
@@ -41,25 +43,25 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $(".slider .swiper-pagination span").each(function (i) {
-    $(this)
-      .text(i + 1)
-      .prepend("0");
+    $(this).text(i + 1).prepend("0");
   });
-});
-
-// maps
+}); // maps
 // Initialize and add the map
+
 function initMap() {
   // The location of Uluru
-  const location = { lat: 28.5928785, lng: 77.3030458 };
-  // The map, centered at Uluru
-  const map = new google.maps.Map(document.getElementById("map"), {
+  var location = {
+    lat: 28.5928785,
+    lng: 77.3030458
+  }; // The map, centered at Uluru
+
+  var map = new google.maps.Map(document.getElementById("map"), {
     zoom: 10,
-    center: location,
-  });
-  // The marker, positioned at Uluru
-  const marker = new google.maps.Marker({
+    center: location
+  }); // The marker, positioned at Uluru
+
+  var marker = new google.maps.Marker({
     position: location,
-    map: map,
+    map: map
   });
 }
