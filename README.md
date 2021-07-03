@@ -10,8 +10,8 @@ Topics
 netlify responsive-design html-css-javascript
 
 ### ScreenShots
-![alt text](assets/img/gif1.gif "GIF Image")
-![alt text](assets/img/gif2.gif "GIF Image")
+![alt text](assets/img/gif1-min.gif "GIF Image")
+![alt text](assets/img/gif2-min.gif "GIF Image")
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
