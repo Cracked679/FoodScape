@@ -9,7 +9,7 @@ Fully responsive restaurant website designed and hand-coded by me.
 - Topics
   - netlify, responsive-design, html-css-javascript
 
-### ScreenShots
+### Preview
 ![alt text](assets/img/rec-min.gif "GIF Image")
 
 <!-- MARKDOWN LINKS & IMAGES -->
