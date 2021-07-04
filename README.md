@@ -5,9 +5,9 @@
 ## Description
 Fully responsive restaurant website designed and hand-coded by me.
 
-foodscape.netlify.app/
-Topics
-netlify responsive-design html-css-javascript
+- Do Visit: https://foodscape.netlify.app/
+- Topics
+ - netlify, responsive-design, html-css-javascript
 
 ### ScreenShots
 ![alt text](assets/img/rec-min.gif "GIF Image")
